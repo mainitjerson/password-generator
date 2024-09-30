@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="container">
+            <div class="dark-mode-container">
+                <input type="checkbox" class="checkbox" id="checkbox">
+                <label for="checkbox" class="checkbox-label">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                    <span class="ball"></span>
+                </label>
+            </div>
+            <div class="upper">
+                <h1>Generate a <br><span>random password</span></h1>
+                <p>Never use an insecure password again.</p>
+                <button class="btn" id="generate">Generate Password</button>
+            </div>
+            <div class="line"></div>
+            <div class="lower">
+                <div class="option">
+                    <div>
+                        <input id="slider" type="range" min="1" max="20" step="1" value="1"> <!--rangeinput-->
+                    </div>
+                    <div>
+                        <input id="value" type="text" maxlength="2" value="1" readonly>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="symbols" >
+                        <label>Symbols</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="number">
+                        <label>Numbers</label>
+                    </div>
+                </div>
+                <div class="password-storage">
+                    <div>
+                        <input id="firstStorage" class=" passTab" type="text" readonly>
+                    </div>
+                    <div>
+                        <input id="secondStorage" class=" passTab" type="text" readonly>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html> 
